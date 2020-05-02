@@ -1,0 +1,44 @@
+body{
+    margin: 0px
+}
+.head{
+    font-size: 30px;font-weight: bold;
+    color:white;text-align: center;
+    padding:20px 0px;
+    background-color: #333
+}
+.welcome{
+    background-image: url(cat.jpg);
+    padding:150px 0px;text-align:center;
+    font-size:30px;color:white;
+    font-weight: bold;
+}
+.title{
+    text-align: center;
+    font-weight:bold;font-size:20px;
+}
+.paths{
+    display:flex;/*內部元件並排*/
+    justify-content: center;/*水平對其*/
+    flex-wrap: wrap;/*允許內部空間往下排列*/
+}
+.path{
+    width: 300px;
+    text-align: center;
+}
+/*css media query*/
+@media(max-width:900px){
+    /*螢幕尺寸小於900巷素的時候 套用這個區塊的設定*/
+   .path{widows: 30%;
+}
+}
+@media(max-width:600px){
+    /*螢幕尺寸小於600巷素的時候 套用這個區塊的設定*/
+    .path{
+        width:90%;
+    }
+}
+
+.lr{
+    display:flex;
+}
